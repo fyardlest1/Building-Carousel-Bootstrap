@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>App Name: A Coding Project By Yardley Estiverne</title>
+    <title>Bootstrap Carousel: A Bootstrap Coding Project By Yardley Estiverne</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -26,7 +26,7 @@
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand logoFont" href="#">
-                <img src="/img/logo2.jpg" alt="Site Logo" class='d-inline-block align-text-top' width='50' > App Name/Logo
+                <img src="/img/logo2.jpg" alt="Site Logo" class='d-inline-block align-text-top' width='50' > Bootstrap Carousel
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,13 +55,129 @@
     </nav>
 
     <!-- Container Body of the Site -->
-    <main class="flex-shrink-0">
-       <div class="container">
-       </div>
+    <main class="flex-shrink-0 container-fluid pt-5 mt-auto">       
+        <div id="shopCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#shopCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Delicious Pizza"></button>
+                <button type="button" data-bs-target="#shopCarousel" data-bs-slide-to="1" aria-label="Farm Fresh"></button>
+                <button type="button" data-bs-target="#shopCarousel" data-bs-slide-to="2" aria-label="Pepperoni Pizza"></button>
+                <button type="button" data-bs-target="#shopCarousel" data-bs-slide-to="3" aria-label="Fresh Delivery"></button>
+                <button type="button" data-bs-target="#shopCarousel" data-bs-slide-to="4" aria-label="Fresh App"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/carouselimg/deliciousBurger.png" class="d-block w-100" alt="Delicious Pizza Image">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carouselimg/FarmFresh.png" class="d-block w-100" alt="Farm Fresh Image">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carouselimg/tastyPepperoniPizza2.png" class="d-block w-100" alt="Pepperoni Pizza">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carouselimg/FreeDelivery.png" class="d-block w-100" alt="Fresh Delivery Image" />
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carouselimg/FreshApp.png" class="d-block w-100" alt="Fresh App Image" />
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#shopCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#shopCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="container pt-4">
+            <div class="row row-cols-1 row-cols-md-3 g-3 pb-3">
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="img/carouselimg/womanFacemask.png" class="card-img-top" alt="Individual plan" />
+                        <div class="card-body">
+                            <h5 class="card-title">Individual</h5>
+                            <p class="card-text">The perfect plan just for you. Just sit back and relax to enjoy!</p>
+                            <a href="#" class="btn btn-primary">More Info</a>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-muted fw-bold">Just for you</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="img/carouselimg/supermarketAisle.png" class="card-img-top" alt="Family plan"/>
+                        <div class="card-body">
+                            <h5 class="card-title">Family Plan</h5>
+                            <p class="card-text">The perfect plan just for you an your entire family. Enjoy the best food now!</p>
+                            <a href="#" class="btn btn-primary">More Info</a>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-muted fw-bold">Just for your family</small>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="img/carouselimg/fruitsVegetables.png" class="card-img-top" alt="Army plan" />
+                        <div class="card-body">
+                            <h5 class="card-title">Army Plan</h5>
+                            <p class="card-text">The perfect plan just for an army. The better choice!</p>
+                            <a href="#" class="btn btn-primary">More Info</a>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-muted fw-bold">Just for an army</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="img/carouselimg/individualShrimp.png" class="card-img-top" alt="Individual plan" />
+                        <div class="card-body">
+                            <h5 class="card-title">Individual</h5>
+                            <p class="card-text">The perfect plan just for you. Just sit back and relax to enjoy!</p>
+                            <a href="#" class="btn btn-success">More Info</a>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-muted fw-bold">Just for you</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="img/carouselimg/groupTogether.png" class="card-img-top" alt="Family plan"/>
+                        <div class="card-body">
+                            <h5 class="card-title">Family Plan</h5>
+                            <p class="card-text">The perfect plan just for you an your entire family. Enjoy the best food now!</p>
+                            <a href="#" class="btn btn-success">More Info</a>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-muted fw-bold">Just for your family</small>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="img/carouselimg/assortedIndian.png" class="card-img-top" alt="Army plan" />
+                        <div class="card-body">
+                            <h5 class="card-title">Army Plan</h5>
+                            <p class="card-text">The perfect plan just for an army. The better choice!</p>
+                            <a href="#" class="btn btn-success">More Info</a>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-muted fw-bold">Just for an army</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Footer Part of the Site -->
-    <footer class="footer mt-auto py-3">
+    <footer class="footer mt-4 py-3">
         <div class="container-fluid">
             <div class="row row-cols-1 row-cols-lg-3 gy-2">
                 <div class="col text-light order-last order-lg-first">
